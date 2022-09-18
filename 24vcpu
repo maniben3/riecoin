@@ -1,0 +1,674 @@
+rieMiner0.93a, Riecoin miner by Pttn and contributors
+Project page: https://riecoin.dev/en/rieMiner
+Launch with 'help' as first argument for a quick usage guide
+-----------------------------------------------------------
+Assembly code by Michael Bell (Rockhawk)
+G++ 10.0.0 - https://gcc.gnu.org/
+GMP 6.2.1 - https://gmplib.org/
+OpenSSL 3.0.5 5 Jul 2022 - https://www.openssl.org/
+Curl 7.84.0 - https://curl.haxx.se/
+NLohmann Json 3.10.5 - https://json.nlohmann.me/
+-----------------------------------------------------------
+Build for: Windows on x64
+Processor: Intel(R) Xeon(R) Platinum 8252C CPU @ 3.80GHz
+Best SIMD instructions supported by the CPU: AVX-512
+This build supports AVX2
+Physical Memory: 93.8745 GiB
+-----------------------------------------------------------
+Opening configuration file rieMiner.conf...
+Pooled mining via host ric.suprnova.cc, port 5000
+Username: pradeep.praveen
+Password: ...
+Auto retune when the Difficulty varies by a factor 1.03
+Stats refresh interval: 30 s
+Connecting to Riecoin server...
+Host: ric.suprnova.cc -> 5.9.193.21
+Successfully subscribed to the pool. Subscriptions:
+        mining.set_difficulty: 0000000000000000c75c000000000000
+        mining.notify: 0000000000000000c75c000000000000
+ExtraNonce1    = 2fffa62f
+extraNonce2Len = 1
+Successfully authorized by the pool.
+Accepted constellation pattern(s):
+ 0 - 0, 2, 4, 2, 4, 6, 2
+ 1 - 0, 2, 6, 4, 2, 4, 2
+None or not compatible one specified, choosing a random one: pattern 0
+Initializing miner...
+Threads: 24 (10 Sieve Worker(s))
+Constellation pattern: n + (0, 2, 6, 8, 12, 18, 20), length 7
+Prime Table Limit: 995153416
+Generating prime table using sieve of Eratosthenes...
+Table with all 50613637 first primes generated in 3.62467 s (404909096 bytes).
+Sieve Size: 2^24 = 16777216 (262144 words)
+Sieve Iterations: 16
+Primorial Factor Max: 268435456
+Primorial Number: 78
+Primorial: p78# = 397# = ~1.017118131388*10^161 (535 bits)
+Primorial Offsets: 92
+Prime index threshold: 14630842
+Estimated additional factors: 122756816 (allocated per iteration: 8151883)
+Precomputing modular inverses and division data...
+Tables of 50613558 modular inverses and 50613558 division entries generated in 1.08155 s (607363632 bytes).
+Allocating 20971520 bytes for the primorial factors tables...
+Allocating 4096635760 bytes for the primorial factors...
+Allocating 5217205120 bytes for the additional primorial factors...
+Done initializing miner.
+Starting the miner's master thread...
+Starting 24 miner's worker threads...
+-----------------------------------------------------------
+[14:30:24.5] Started mining at block 1793619, difficulty 858.625
+[14:30:28.5] 5-share found by worker thread 3
+[14:30:36.7] 5-share found by worker thread 1
+[14:30:37.3] 5-share found by worker thread 15
+[14:30:40.9] 5-share found by worker thread 4
+[14:30:41.3] 5-share found by worker thread 23
+[14:30:42.5] 5-share found by worker thread 10
+[14:30:42.6] 5-share found by worker thread 18
+[14:30:42.8] 5-share found by worker thread 11
+[14:30:43.7] 5-share found by worker thread 21
+[14:30:54.7] 34157.35 c/s, r 16.19 ; Sh: 9/9 (100.0%) | 126.6 RIC/d
+[14:30:54.9] 5-share found by worker thread 18
+[14:30:55.7] 5-share found by worker thread 19
+[14:30:58.0] 5-share found by worker thread 4
+[14:31:01.7] 5-share found by worker thread 3
+[14:31:02.1] 5-share found by worker thread 1
+[14:31:06.8] 5-share found by worker thread 3
+[14:31:09.0] 5-share found by worker thread 19
+[14:31:23.8] 5-share found by worker thread 13
+[14:31:24.7] 35557.01 c/s, r 16.08 ; Sh: 17/17 (100.0%) | 138.1 RIC/d
+[14:31:31.3] 5-share found by worker thread 15
+[14:31:35.3] 5-share found by worker thread 0
+[14:31:38.3] 5-share found by worker thread 21
+[14:31:51.8] 6-share found by worker thread 23
+[14:31:55.0] 35923.13 c/s, r 16.09 ; Sh: 21/21 (100.0%) | 138.8 RIC/d
+[14:31:55.8] 5-share found by worker thread 16
+[14:31:55.9] 5-share found by worker thread 5
+[14:31:56.9] Block 1793620, average 92.4 s, difficulty 858.086
+[14:32:03.8] 5-share found by worker thread 17
+[14:32:04.1] 5-share found by worker thread 7
+[14:32:06.8] 5-share found by worker thread 5
+[14:32:14.4] 5-share found by worker thread 3
+[14:32:15.7] 5-share found by worker thread 21
+[14:32:16.6] 6-share found by worker thread 16
+[14:32:17.4] 5-share found by worker thread 11
+Share rejected :| ! Received: {"id":31,"result":null,"error":[21,"job not found"]}
+[14:32:17.8] Block 1793621, average 56.7 s, difficulty 859.340
+[14:32:22.4] 5-share found by worker thread 3
+[14:32:22.6] 5-share found by worker thread 16
+[14:32:23.3] 5-share found by worker thread 6
+[14:32:24.7] 5-share found by worker thread 18
+[14:32:25.1] 34932.24 c/s, r 16.10 ; Sh: 33/34 (97.1%) | 134.6 RIC/d
+[14:32:28.9] 5-share found by worker thread 21
+[14:32:28.9] 5-share found by worker thread 11
+[14:32:34.4] 5-share found by worker thread 16
+[14:32:36.8] 5-share found by worker thread 16
+[14:32:36.9] 5-share found by worker thread 5
+[14:32:42.9] 5-share found by worker thread 15
+[14:32:49.4] 5-share found by worker thread 18
+[14:32:50.1] 5-share found by worker thread 16
+[14:32:55.5] 35319.45 c/s, r 16.09 ; Sh: 41/42 (97.6%) | 136.7 RIC/d
+[14:33:01.0] 5-share found by worker thread 1
+[14:33:01.5] 5-share found by worker thread 11
+[14:33:07.3] 5-share found by worker thread 21
+[14:33:13.3] 5-share found by worker thread 11
+[14:33:15.4] 5-share found by worker thread 18
+[14:33:25.6] 5-share found by worker thread 3
+[14:33:26.0] 35182.03 c/s, r 16.09 ; Sh: 47/48 (97.9%) | 135.9 RIC/d
+[14:33:32.2] 5-share found by worker thread 3
+[14:33:34.5] 5-share found by worker thread 12
+[14:33:38.7] 5-share found by worker thread 17
+[14:33:39.6] 5-share found by worker thread 0
+[14:33:40.4] 5-share found by worker thread 15
+[14:33:40.4] 5-share found by worker thread 5
+[14:33:41.0] 5-share found by worker thread 7
+[14:33:43.8] 5-share found by worker thread 13
+[14:33:43.9] 5-share found by worker thread 3
+[14:33:46.9] 5-share found by worker thread 19
+[14:33:47.2] 5-share found by worker thread 10
+[14:33:52.1] 5-share found by worker thread 15
+[14:33:54.1] 5-share found by worker thread 17
+[14:33:54.3] 5-share found by worker thread 21
+[14:33:56.1] 35381.79 c/s, r 16.10 ; Sh: 61/62 (98.4%) | 136.2 RIC/d
+[14:33:58.3] 5-share found by worker thread 7
+[14:34:00.6] 5-share found by worker thread 3
+[14:34:08.8] 5-share found by worker thread 10
+[14:34:11.1] 5-share found by worker thread 16
+[14:34:12.9] 6-share found by worker thread 8
+[14:34:13.9] 5-share found by worker thread 18
+[14:34:15.8] 5-share found by worker thread 16
+[14:34:21.2] 5-share found by worker thread 18
+[14:34:21.6] 5-share found by worker thread 15
+[14:34:23.6] 5-share found by worker thread 16
+[14:34:24.0] 5-share found by worker thread 21
+[14:34:26.5] [14:34:26.9] 5-share found by worker thread 21
+35443.99 c/s, r 16.10 ; Sh: 72/73 (98.6%) | 136.7 RIC/d
+[14:34:27.3] 5-share found by worker thread 19
+[14:34:39.9] 5-share found by worker thread 0
+[14:34:46.0] 5-share found by worker thread 5
+[14:34:56.9] 35456.58 c/s, r 16.11 ; Sh: 76/77 (98.7%) | 136.2 RIC/d
+[14:35:01.1] 5-share found by worker thread 7
+[14:35:26.9] 35272.73 c/s, r 16.12 ; Sh: 77/78 (98.7%) | 135.0 RIC/d
+[14:35:28.0] 5-share found by worker thread 19
+[14:35:28.2] 5-share found by worker thread 16
+[14:35:28.9] 5-share found by worker thread 15
+[14:35:37.1] 5-share found by worker thread 11
+[14:35:41.7] 5-share found by worker thread 22
+[14:35:56.9] 35110.98 c/s, r 16.12 ; Sh: 82/83 (98.8%) | 134.0 RIC/d
+[14:36:01.2] 5-share found by worker thread 8
+[14:36:03.4] 5-share found by worker thread 7
+[14:36:04.9] 5-share found by worker thread 20
+[14:36:08.8] 5-share found by worker thread 1
+[14:36:11.4] 5-share found by worker thread 15
+[14:36:14.7] 5-share found by worker thread 8
+[14:36:16.5] 5-share found by worker thread 8
+[14:36:17.4] 5-share found by worker thread 5
+[14:36:22.1] 5-share found by worker thread 16
+[14:36:22.1] 5-share found by worker thread 9
+[14:36:23.7] 5-share found by worker thread 5
+[14:36:27.0] 35032.87 c/s, r 16.12 ; Sh: 93/94 (98.9%) | 133.8 RIC/d
+[14:36:43.5] 5-share found by worker thread 14
+[14:36:53.5] 5-share found by worker thread 15
+[14:36:55.1] 5-share found by worker thread 11
+[14:36:57.1] 5-share found by worker thread 1
+[14:36:57.2] 34901.93 c/s, r 16.12 ; Sh: 97/98 (99.0%) | 133.3 RIC/d
+[14:36:57.7] 5-share found by worker thread 11
+[14:36:59.6] 5-share found by worker thread 10
+[14:37:06.1] 5-share found by worker thread 20
+[14:37:08.0] 5-share found by worker thread 14
+[14:37:09.7] 5-share found by worker thread 22
+[14:37:11.7] 5-share found by worker thread 14
+[14:37:14.2] 5-share found by worker thread 10
+[14:37:22.4] 5-share found by worker thread 1
+[14:37:27.1] 5-share found by worker thread 16
+[14:37:27.3] 34872.87 c/s, r 16.13 ; Sh: 106/107 (99.1%) | 132.7 RIC/d
+[14:37:34.6] 5-share found by worker thread 12
+[14:37:35.4] 5-share found by worker thread 22
+[14:37:42.8] 5-share found by worker thread 16
+[14:37:42.8] 5-share found by worker thread 9
+[14:37:47.0] 6-share found by worker thread 4
+[14:37:49.4] 5-share found by worker thread 5
+[14:37:52.2] 5-share found by worker thread 7
+[14:37:53.8] 5-share found by worker thread 7
+[14:37:54.4] 5-share found by worker thread 7
+[14:37:54.9] 5-share found by worker thread 19
+[14:37:57.3] 34880.39 c/s, r 16.13 ; Sh: 116/117 (99.1%) | 132.5 RIC/d
+[14:38:02.3] 5-share found by worker thread 5
+[14:38:06.1] 5-share found by worker thread 3
+[14:38:06.4] 5-share found by worker thread 2
+[14:38:06.9] 5-share found by worker thread 21
+[14:38:14.2] 5-share found by worker thread 20
+[14:38:14.3] 5-share found by worker thread 22
+[14:38:19.0] 5-share found by worker thread 15
+[14:38:27.4] 34688.02 c/s, r 16.14 ; Sh: 123/124 (99.2%) | 131.6 RIC/d
+[14:38:29.5] 5-share found by worker thread 18
+[14:38:30.6] 5-share found by worker thread 14
+[14:38:33.8] 5-share found by worker thread 18
+[14:38:36.4] 5-share found by worker thread 18
+[14:38:47.5] 5-share found by worker thread 16
+[14:38:47.7] 5-share found by worker thread 1
+[14:38:47.9] 5-share found by worker thread 18
+[14:38:48.8] 5-share found by worker thread 2
+[14:38:51.8] 5-share found by worker thread 8
+[14:38:52.7] 5-share found by worker thread 8
+[14:38:55.8] 5-share found by worker thread 15
+[14:38:56.7] 5-share found by worker thread 13
+[14:38:57.4] 34708.95 c/s, r 16.13 ; Sh: 135/136 (99.3%) | 131.7 RIC/d
+[14:39:02.9] Block 1793622, average 172.8 s, difficulty 856.820
+[14:39:05.4] 5-share found by worker thread 15
+[14:39:07.7] 5-share found by worker thread 19
+[14:39:09.0] 5-share found by worker thread 0
+[14:39:15.7] 5-share found by worker thread 22
+[14:39:16.2] 5-share found by worker thread 3
+[14:39:16.3] 5-share found by worker thread 13
+[14:39:20.5] 5-share found by worker thread 22
+[14:39:21.0] 5-share found by worker thread 8
+[14:39:21.9] 5-share found by worker thread 1
+[14:39:27.4] 5-share found by worker thread 13
+[14:39:27.6] 34693.48 c/s, r 16.14 ; Sh: 145/146 (99.3%) | 131.5 RIC/d
+[14:39:30.1] 5-share found by worker thread 11
+[14:39:30.2] 5-share found by worker thread 18
+[14:39:32.5] 5-share found by worker thread 5
+[14:39:32.6] 5-share found by worker thread 17
+[14:39:33.4] 5-share found by worker thread 9
+[14:39:40.9] 5-share found by worker thread 5
+[14:39:50.1] 5-share found by worker thread 13
+[14:39:50.9] 5-share found by worker thread 16
+[14:39:57.7] 34707.83 c/s, r 16.14 ; Sh: 153/154 (99.4%) | 131.6 RIC/d
+[14:40:02.8] 5-share found by worker thread 10
+[14:40:06.9] 5-share found by worker thread 18
+[14:40:14.0] 5-share found by worker thread 10
+[14:40:17.6] 5-share found by worker thread 3
+[14:40:21.6] 5-share found by worker thread 2
+[14:40:23.5] 5-share found by worker thread 14
+[14:40:23.7] 5-share found by worker thread 7
+[14:40:23.9] 5-share found by worker thread 1
+[14:40:24.3] 5-share found by worker thread 16
+[14:40:28.3] 5-share found by worker thread 19
+[14:40:29.0] 34643.28 c/s, r [14:40:29.2] 5-share found by worker thread 16.13 ; Sh: 163/164 (18
+99.4%) | 131.5 RIC/d
+[14:40:30.9] 5-share found by worker thread 16
+[14:40:33.5] 5-share found by worker thread 10
+[14:40:34.0] 5-share found by worker thread 11
+[14:40:34.4] 5-share found by worker thread 2
+[14:40:35.4] 5-share found by worker thread 17
+[14:40:43.7] 5-share found by worker thread 7
+[14:40:56.4] 5-share found by worker thread 7
+[14:40:56.5] 5-share found by worker thread 18
+[14:40:59.5] 34659.62 c/s, r 16.13 ; Sh: 172/173 (99.4%) | 131.5 RIC/d
+[14:41:03.5] 5-share found by worker thread 12
+[14:41:08.9] 5-share found by worker thread 15
+[14:41:14.0] 5-share found by worker thread 15
+[14:41:15.3] 5-share found by worker thread 3
+[14:41:16.2] 5-share found by worker thread 23
+[14:41:17.5] 5-share found by worker thread 14
+[14:41:18.9] 5-share found by worker thread 12
+[14:41:22.6] 5-share found by worker thread 3
+[14:41:24.8] 5-share found by worker thread 20
+[14:41:25.5] 5-share found by worker thread 20
+[14:41:28.2] 5-share found by worker thread 20
+[14:41:29.9] 34689.37 c/s, r 16.14 ; Sh: 183/184 (99.5%) | 131.6 RIC/d
+[14:41:30.6] 5-share found by worker thread 15
+[14:41:31.6] 5-share found by worker thread 20
+[14:41:31.9] 5-share found by worker thread 8
+[14:41:35.5] 5-share found by worker thread 10
+[14:41:46.0] 5-share found by worker thread 19
+[14:41:52.6] 6-share found by worker thread 10
+[14:41:53.9] 5-share found by worker thread 5
+[14:41:59.2] 5-share found by worker thread 10
+[14:41:59.4] 5-share found by worker thread 19
+[14:42:00.2] 34709.12 c/s, r 16.13 ; Sh: 192/193 (99.5%) | 131.7 RIC/d
+[14:42:04.0] 5-share found by worker thread 14
+[14:42:08.2] 5[14:42:08.4] 5-share found by worker thread 9
+-share found by worker thread 5
+[14:42:09.1] 5-share found by worker thread 6
+[14:42:18.5] 5-share found by worker thread 19
+[14:42:20.2] 5-share found by worker thread 8
+[14:42:31.9] 34625.54 c/s, r 16.13 ; Sh: 198/199 ([14:42:32.1] 5-share found by worker thread 99.5%) | 8
+131.4 RIC/d
+[14:42:37.1] 5-share found by worker thread 19
+[14:42:37.3] 5-share found by worker thread 8
+[14:42:40.5] 5-share found by worker thread 19
+[14:42:43.5] 5-share found by worker thread 16
+[14:42:45.5] 5-share found by worker thread 3
+[14:42:45.6] 5-share found by worker thread 16
+[14:42:46.0] 5-share found by worker thread 22
+[14:42:47.6] 5-share found by worker thread 17
+[14:42:48.6] 5-share found by worker thread 7
+[14:42:49.6] 5-share found by worker thread 10
+[14:43:02.1] 34657.37 c/s, r 16.13 ; Sh: 209/210 (99.5%) | 131.6 RIC/d
+[14:43:02.7] 5-share found by worker thread 7
+[14:43:06.0] 5-share found by worker thread 12
+[14:43:12.4] 5-share found by worker thread 8
+[14:43:14.7] 5-share found by worker thread 11
+[14:43:15.0] 5-share found by worker thread 4
+[14:43:15.7] 5-share found by worker thread 1
+[14:43:23.4] 5-share found by worker thread [14:43:23.4] 5-share found by worker thread 13
+7
+[14:43:24.9] 5-share found by worker thread 9
+[14:43:25.2] 5-share found by worker thread 0
+[14:43:25.4] 5-share found by worker thread 4
+[14:43:27.6] 5-share found by worker thread 9
+[14:43:29.0] 5-share found by worker thread 16
+[14:43:29.5] 5-share found by worker thread 13
+[14:43:32.5] 34700.24 c/s, r 16.13 ; Sh: 223/224 (99.6%) | 131.8 RIC/d
+[14:43:34.8] 5-share found by worker thread 1
+[14:43:42.1] 5-share found by worker thread 21
+[14:43:42.4] 5-share found by worker thread 19
+[14:43:55.1] 5-share found by worker thread 0
+[14:43:57.5] 5-share found by worker thread 17
+[14:43:58.2] 5-share found by worker thread 19
+[14:43:59.4] Block 1793623, average 203.7 s, difficulty 855.535
+[14:44:02.4] 5-share found by worker thread 7
+[14:44:02.5] 34596.04 c/s, r 16.13 ; Sh: 229/230 (99.6%) | 131.5 RIC/d
+[14:44:04.1] 5-share found by worker thread 10
+[14:44:06.0] Block 1793624, average 164.3 s, difficulty 856.723
+[14:44:10.5] 5-share found by worker thread 10
+[14:44:16.4] 5-share found by worker thread 16
+[14:44:25.7] 5-share found by worker thread 19
+[14:44:25.7] 5-share found by worker thread 5
+[14:44:27.2] 5-share found by worker thread 5
+[14:44:32.8] 34481.88 c/s, r 16.13 ; Sh: 236/237 (99.6%) | 131.0 RIC/d
+[14:44:36.0] 5-share found by worker thread 16
+[14:44:39.6] 5-share found by worker thread 14
+[14:44:46.1] 5-share found by worker thread 5
+[14:44:50.1] 5-share found by worker thread 10
+[14:44:51.5] 5-share found by worker thread 15
+[14:44:52.6] Block 1793625, average 144.7 s, difficulty 858.082
+[14:44:55.1] 5-share found by worker thread 4
+[14:44:56.2] 5-share found by worker thread 10
+[14:44:57.2] 5-share found by worker thread 11
+[14:45:00.7] 5-share found by worker thread 23
+[14:45:00.9] 5-share found by worker thread 15
+[14:45:02.8] 34397.66 c/s, r 16.13 ; Sh: 246/247 (99.6%) | 130.8 RIC/d
+[14:45:05.1] 5-share found by worker thread 0
+[14:45:09.1] 5-share found by worker thread 6
+[14:45:11.5] 6-share found by worker thread 5
+[14:45:17.6] 5-share found by worker thread 0
+[14:45:19.4] 5-share found by worker thread 2
+[14:45:30.5] 5-share found by worker thread 12
+[14:45:32.8] 34423.33 c/s, r 16.13 ; Sh: 252/253 (99.6%) | 130.7 RIC/d
+[14:45:36.3] 5-share found by worker thread 22
+[14:45:37.0] 5-share found by worker thread 5
+[14:45:38.6] 5-share found by worker thread 0
+[14:45:41.4] 5-share found by worker thread 0
+[14:45:47.1] 5-share found by worker thread 9
+[14:45:52.1] 5-share found by worker thread 4
+[14:45:56.3] 5-share found by worker thread 2
+[14:45:58.9] 5-share found by worker thread 18
+[14:46:02.8] 34365.77 c/s, r 16.14 ; Sh: 260/261 (99.6%) | 130.2 RIC/d
+[14:46:04.2] 5-share found by worker thread 21
+[14:46:06.5] 5-share found by worker thread 0
+[14:46:07.6] 5-share found by worker thread 17
+[14:46:09.1] 5-share found by worker thread 15
+[14:46:11.4] 5-share found by worker thread 0
+[14:46:13.6] Block 1793626, average 135.6 s, difficulty 858.355
+[14:46:21.8] 5-share found by worker thread 21
+[14:46:22.2] 5-share found by worker thread 13
+[14:46:23.2] 5-share found by worker thread 13
+[14:46:23.7] 5-share found by worker thread 1
+[14:46:24.8] 5-share found by worker thread 21
+[14:46:26.4] 5-share found by worker thread 10
+[14:46:26.4] 5-share found by worker thread 9
+[14:46:27.3] 5-share found by worker thread 15
+[14:46:32.9] 34142.32 c/s, r 16.13 ; Sh: 273/274 (99.6%) | 130.0 RIC/d
+[14:46:33.3] 5-share found by worker thread 3
+[14:46:35.0] 5-share found by worker thread 0
+[14:46:35.2] 5-share found by worker thread 3
+[14:46:45.7] 5-share found by worker thread 22
+[14:46:46.2] 5-share found by worker thread 19
+[14:46:49.5] 5-share found by worker thread 10
+[14:46:52.4] 5-share found by worker thread 18
+[14:46:57.7] 5-share found by worker thread 16
+[14:46:58.4] 5-share found by worker thread 9
+[14:47:03.0] 34232.33 c/s, r 16.13 ; Sh: 282/283 (99.6%) | 130.0 RIC/d
+[14:47:07.7] Block 1793627, average 125.4 s, difficulty 859.426
+[14:47:10.8] 5-share found by worker thread 23
+[14:47:17.9] 5-share found by worker thread 5
+[14:47:20.5] 5-share found by worker thread 9
+[14:47:22.8] 5-share found by worker thread 6
+[14:47:23.8] 5-share found by worker thread 2
+[14:47:29.2] 5-share found by worker thread 8
+[14:47:30.4] 5-share found by worker thread 21
+[14:47:32.2] 5-share found by worker thread 6
+[14:47:33.2] 33822.96 c/s, r 16.15 ; Sh: 290/291 (99.7%) | 127.6 RIC/d
+[14:47:34.5] Block 1793628, average 114.5 s, difficulty 860.645
+[14:47:48.1] 5-share found by worker thread 11
+[14:47:50.4] 5-share found by worker thread 6
+[14:47:50.5] 5-share found by worker thread 22
+[14:47:54.2] 5-share found by worker thread 7
+[14:47:55.2] 5-share found by worker thread 15
+[14:47:55.8] 6-share found by worker thread 1
+[14:48:03.4] [14:48:03.4] 5-share found by worker thread 7
+33867.35 c/s, r 16.16 ; Sh: 296/297 (99.7%) | 127.2 RIC/d
+[14:48:08.5] 5-share found by worker thread 5
+[14:48:11.6] 5-share found by worker thread 16
+[14:48:15.1] 5-share found by worker thread 10
+[14:48:20.5] 5-share found by worker thread 3
+[14:48:21.3] 5-share found by worker thread 19
+[14:48:23.6] 5-share found by worker thread 16
+[14:48:25.6] 5-share found by worker thread 4
+[14:48:26.4] 5-share found by worker thread 15
+[14:48:27.4] 5-share found by worker thread 19
+[14:48:30.6] 5-share found by worker thread 19
+[14:48:32.5] 5-share found by worker thread 4
+[14:48:33.5] 34031.01 c/s, r 16.15 ; Sh: 308/309 (99.7%) | 128.0 RIC/d
+[14:48:34.8] 5-share found by worker thread 15
+[14:48:37.1] 5-share found by worker thread 15
+[14:48:40.7] 5-share found by worker thread 20
+[14:48:40.9] 5-share found by worker thread 15
+[14:48:40.9] 5-share found by worker thread 11
+[14:48:41.1] 5-share found by worker thread 1
+[14:48:48.7] 5-share found by worker thread 20
+[14:49:02.7] 5-share found by worker thread 23
+[14:49:03.6] 5-share found by worker thread 21
+[14:49:03.7] 34138.13 c/s, r 16.15 ; Sh: 317/318 (99.7%) | 128.8 RIC/d
+[14:49:06.2] 5-share found by worker thread 17
+[14:49:06.7] 5-share found by worker thread 17
+[14:49:13.7] 5-share found by worker thread 0
+[14:49:15.9] 5-share found by worker thread 8
+[14:49:18.3] Block 1793629, average 113.4 s, difficulty 860.945
+[14:49:25.7] 5-share found by worker thread 5
+[14:49:26.4] 5-share found by worker thread 0
+[14:49:27.5] 5-share found by worker thread 0
+[14:49:28.1] 5-share found by worker thread 5
+[14:49:28.5] 5-share found by worker thread 5
+[14:49:33.9] 34035.28 c/s, r 16.16 ; Sh: 326/327 (99.7%) | 127.7 RIC/d
+[14:49:38.6] 5-share found by worker thread 21
+[14:49:41.6] 5-share found by worker thread 12
+[14:49:43.1] 5-share found by worker thread 0
+[14:49:48.1] 5-share found by worker thread 11
+[14:49:49.5] 5-share found by worker thread 21
+[14:49:50.0] 5-share found by worker thread 3
+[14:49:53.3] 5-share found by worker thread 1
+[14:49:53.9] 5-share found by worker thread 23
+[14:50:01.3] 5-share found by worker thread 16
+[14:50:04.0] 34221.05 c/s, r 16.15 ; Sh: 335/336 (99.7%) | 128.9 RIC/d
+[14:50:05.1] 6-share found by worker thread 10
+[14:50:09.4] 5-share found by worker thread 23
+[14:50:17.5] 5-share found by worker thread 6
+[14:50:18.1] 5-share found by worker thread 19
+[14:50:18.8] 5-share found by worker thread 20
+[14:50:20.0] 5-share found by worker thread 20
+[14:50:21.2] 5-share found by worker thread 16
+[14:50:23.1] 5-share found by worker thread 7
+[14:50:31.8] 5-share found by worker thread 11
+[14:50:33.2] Block 1793630, average 109.9 s, difficulty 861.680
+[14:50:34.4] 34220.99 c/s, r 16.15 ; Sh: 344/345 (99.7%) | 129.0 RIC/d
+[14:50:36.9] 5-share found by worker thread 19
+[14:50:39.7] 5-share found by worker thread 11
+[14:50:52.5] 5-share found by worker thread 4
+[14:50:54.0] 5-share found by worker thread 2
+[14:50:57.3] 5-share found by worker thread 16
+[14:50:58.0] 5-share found by worker thread 3
+[14:51:01.5] 5-share found by worker thread 13
+[14:51:01.8] 5-share found by worker thread 3
+[14:51:02.9] 5-share found by worker thread 5
+[14:51:03.2] 5-share found by worker thread 1
+[14:51:04.9] 34384.37 c/s, r 16.15 ; Sh: 354/355 (99.7%) | 129.6 RIC/d
+[14:51:07.4] 5-share found by worker thread 23
+[14:51:08.4] 5-share found by worker thread 18
+[14:51:14.8] 5-share found by worker thread 3
+[14:51:16.8] 5-share found by worker thread 21
+[14:51:17.8] 5-share found by worker thread 5
+[14:51:24.9] 5-share found by worker thread 6
+[14:51:30.9] 5-share found by worker thread 0
+[14:51:35.0] 34607.18 c/s, r 16.15 ; Sh: 361/362 (99.7%) | 130.2 RIC/d
+[14:51:36.6] 5-share found by worker thread 10
+[14:51:38.6] 5-share found by worker thread 3
+[14:51:42.4] 5-share found by worker thread 18
+[14:51:43.2] 5-share found by worker thread 3
+[14:51:44.0] 5-share found by worker thread 1
+[14:51:44.3] 5-share found by worker thread 3
+[14:51:44.6] 5-share found by worker thread 7
+[14:51:46.6] 5-share found by worker thread 17
+[14:51:46.8] 5-share found by worker thread 3
+[14:51:50.2] 5-share found by worker thread 3
+[14:51:51.2] 5-share found by worker thread 2
+[14:51:56.7] 5-share found by worker thread 18
+[14:52:00.6] 5-share found by worker thread 6
+[14:52:02.4] 5-share found by worker thread 8
+[14:52:03.4] 5-share found by worker thread 21
+[14:52:05.3] 34701.06 c/s, r 16.16 ; Sh: 376/377 (99.7%) | 130.3 RIC/d
+[14:52:08.6] 5-share found by worker thread 13
+[14:52:11.4] 5-share found by worker thread 13
+[14:52:13.4] 5-share found by worker thread 10
+[14:52:14.4] 5-share found by worker thread 4
+[14:52:15.2] 5-share found by worker thread 15
+[14:52:15.4] 5-share found by worker thread 5
+[14:52:27.0] 5-share found by worker thread 11
+[14:52:28.4] 5-share found by worker thread 2
+[14:52:30.4] 6-share found by worker thread 8
+[14:52:33.5] 5-share found by worker thread 22
+[14:52:34.8] 5-share found by worker thread 20
+[14:52:35.7] 5-share found by worker thread 23
+[14:52:36.8] 34767.56 c/s, r 16.16 ; Sh: 388/389 (99.7%) | 130.4 RIC/d
+[14:52:38.0] 5-share found by worker thread 7
+[14:52:39.3] 5-share found by worker thread 20
+[14:52:40.1] 5-share found by worker thread 7
+[14:52:40.4] 5-share found by worker thread 4
+[14:52:41.2] 5-share found by worker thread 4
+[14:52:42.4] 5-share found by worker thread 9
+[14:52:43.4] 6-share found by worker thread 20
+[14:52:54.2] 5-share found by worker thread 11
+[14:52:56.2] 5-share found by worker thread 22
+[14:52:57.0] 5-share found by worker thread 3
+[14:52:59.6] 5-share found by worker thread 14
+[14:53:01.4] 6-share found by worker thread 5
+[14:53:05.0] 5-share found by worker thread 2
+[14:53:07.4] 34947.54 c/s, r 16.17 ; Sh: 401/402 (99.8%) | 130.7 RIC/d
+[14:53:12.8] 5-share found by worker thread 19
+[14:53:14.7] 5-share found by worker thread 4
+[14:53:17.4] 5-share found by worker thread 5
+[14:53:19.1] 5-share found by worker thread 9
+[14:53:19.7] 5-share found by worker thread 19
+[14:53:28.6] 5-share found by worker thread 10
+[14:53:31.3] 5-share found by worker thread 2
+[14:53:31.4] 5-share found by worker thread 3
+[14:53:37.7] 34960.73 c/s, r 16.17 ; Sh: 409/410 (99.8%) | 130.8 RIC/d
+[14:53:45.3] 6-share found by worker thread 19
+[14:53:55.5] 5-share found by worker thread 19
+[14:53:56.6] 5-share found by worker thread 16
+[14:53:57.0] 5-share found by worker thread 3
+[14:53:58.9] 5-share found by worker thread 19
+[14:54:00.3] 5-share found by worker thread 18
+[14:54:05.2] 5-share found by worker thread 21
+[14:54:06.7] 5-share found by worker thread 7
+[14:54:07.8] 5-share found by worker thread 13
+[14:54:08.3] 35031.78 c/s, r 16.17 ; Sh: 418/419 (99.8%) | 130.9 RIC/d
+[14:54:09.9] 5-share found by worker thread 15
+[14:54:10.0] 5-share found by worker thread 16
+[14:54:11.0] 5-share found by worker thread 15
+[14:54:18.2] 5-share found by worker thread 7
+[14:54:20.5] 5-share found by worker thread 3
+[14:54:21.3] 5-share found by worker thread 3
+[14:54:24.2] 5-share found by worker thread 5
+[14:54:26.5] 5-share found by worker thread 10
+[14:54:28.2] 5-share found by worker thread 23
+[14:54:37.8] 5-share found by worker thread 0
+[14:54:38.3] 35138.53 c/s, r 16.17 ; Sh: 428/429 (99.8%) | 131.6 RIC/d
+[14:54:44.3] 5-share found by worker thread 19
+[14:54:51.2] 5-share found by worker thread 4
+[14:54:52.2] 5-share found by worker thread 10
+[14:55:08.7] 35207.64 c/s, r 16.17 ; Sh: 431/432 (99.8%) | 131.6 RIC/d
+[14:55:26.8] 5-share found by worker thread 8
+[14:55:30.0] 5-share found by worker thread 7
+[14:55:39.9] 35210.51 c/s, r 16.17 ; Sh: 433/434 (99.8%) | 131.4 RIC/d
+[14:55:43.0] 5-share found by worker thread 16
+[14:55:44.1] 5-share found by worker thread 20
+[14:55:50.0] 5-share found by worker thread 1
+[14:55:54.4] 5-share found by worker thread 19
+[14:55:55.6] 5-share found by worker thread 8
+[14:55:57.6] 5-share found by worker thread 11
+[14:55:58.0] 5-share found by worker thread 6
+[14:55:58.5] 5-share found by worker thread 1
+[14:56:10.0] 35278.65 c/s, r 16.18 ; Sh: 441/442 (99.8%) | 131.3 RIC/d
+[14:56:13.2] 5-share found by worker thread 3
+[14:56:20.3] 5-share found by worker thread 17
+[14:56:26.7] 6-share found by worker thread 6
+[14:56:33.4] 5-share found by worker thread 7
+[14:56:34.4] 5-share found by worker thread 6
+[14:56:40.5] 35323.41 c/s, r 16.19 ; Sh: 446/447 (99.8%) | 131.1 RIC/d
+[14:56:42.5] 5-share found by worker thread 11
+[14:56:52.7] 5-share found by worker thread 3
+[14:56:58.0] 5-share found by worker thread 15
+[14:56:58.2] 5-share found by worker thread 15
+[14:57:01.9] 5-share found by worker thread 19
+[14:57:05.1] 5-share found by worker thread 3
+[14:57:11.3] 5-share found by worker thread 11
+[14:57:12.0] 35333.80 c/s, r 16.18 ; Sh: 453/454 (99.8%) | 131.2 RIC/d
+[14:57:16.8] 5-share found by worker thread 18
+[14:57:18.1] 5-share found by worker thread 13
+[14:57:18.9] 5-share found by worker thread 3
+[14:57:23.1] 5-share found by worker thread 14
+[14:57:26.3] 5-share found by worker thread 18
+[14:57:31.1] 5-share found by worker thread 21
+[14:57:32.1] 6-share found by worker thread 13
+[14:57:34.7] 5-share found by worker thread 19
+[14:57:36.7] 5-share found by worker thread 16
+[14:57:37.5] 5-share found by worker thread 14
+[14:57:38.6] 5-share found by worker thread 19
+[14:57:42.3] 35395.28 c/s, r 16.18 ; Sh: 464/465 (99.8%) | 131.5 RIC/d
+[14:57:57.0]Could not parse Json Message!
+Pool message was: {"id":null,"method":"mining.notify","params":["2f99","f66180a0e270477699d8c88b81eee8fb058b0
+Connection lost, reconnecting in 10 s...
+Waiting for the miner's master thread to finish...
+[14:57:43.7] 5-share found by worker thread 3
+[14:57:52.7] 5-share found by worker thread 21
+ 5-share found by worker thread 4
+Waiting for the miner's worker threads to finish...
+[14:57:58.8] 5-share found by worker thread 20
+[14:57:54.6] 5-share found by worker thread 5
+Miner threads stopped.
+Connecting to Riecoin server...
+Host: ric.suprnova.cc -> 5.9.193.21
+Successfully subscribed to the pool. Subscriptions:
+        mining.set_difficulty: 0000000000000000c65c000000000000
+        mining.notify: 0000000000000000c65c000000000000
+ExtraNonce1    = 5fffa647
+extraNonce2Len = 1
+Successfully authorized by the pool.
+Starting the miner's master thread...
+Starting 24 miner's worker threads...
+-----------------------------------------------------------
+[15:02:22.7] Started mining at block 1793632, difficulty 857.789
+[15:02:26.0] 5-share found by worker thread 1
+[15:02:26.2] 5-share found by worker thread 13
+[15:02:28.8] Block 1793633, average 6.1 s, difficulty 859.148
+[15:02:36.6] 6-share found by worker thread 15
+[15:02:37.3] 6-share found by worker thread 15
+[15:02:40.0] 6-share found by worker thread 0
+[15:02:41.4] 5-share found by worker thread 18
+[15:02:45.5] Block 1793634, average 11.4 s, difficulty 860.301
+[15:02:51.0] 5-share found by worker thread 3
+[15:02:51.0] 5-share found by worker thread 8
+[15:02:51.3] 6-share found by worker thread 5
+[15:02:52.2] 5-share found by worker thread 4
+[15:02:52.7] 32223.94 c/s, r 16.04 ; Sh: 10/10 (100.0%) | 127.2 RIC/d
+[15:02:53.4] 5-share found by worker thread 3
+[15:02:54.0] 5-share found by worker thread 19
+[15:02:54.8] 5-share found by worker thread 3
+[15:03:07.6] 5-share found by worker thread 11
+[15:03:10.3] 5-share found by worker thread 16
+[15:03:10.6] 5-share found by worker thread 2
+[15:03:10.9] 5-share found by worker thread 18
+[15:03:15.8] 5-share found by worker thread 0
+[15:03:21.4] 5-share found by worker thread 1
+[15:03:21.6] 5-share found by worker thread 3
+[15:03:22.7] 34905.24 c/s, r 16.13 ; Sh: 20/20 (100.0%) | 132.8 RIC/d
+[15:03:24.9] 5-share found by worker thread 7
+[15:03:25.9] 5-share found by worker thread 17
+[15:03:27.0] 5-share found by worker thread 13
+[15:03:29.3] 5-share found by worker thread 2
+[15:03:31.8] 5-share found by worker thread 7
+[15:03:32.6] 5-share found by worker thread 1
+[15:03:34.1] 5-share found by worker thread 16
+[15:03:43.1] 5-share found by worker thread 6
+[15:03:43.2] 5-share found by worker thread 6
+[15:03:47.5] 5-share found by worker thread 2
+[15:03:52.6] 5-share found by worker thread 15
+[15:03:53.3] 35431.84 c/s, r 16.11 ; Sh: 31/31 (100.0%) | 136.0 RIC/d
+[15:04:08.1] 5-share found by worker thread 0
+[15:04:09.1] 5-share found by worker thread 15
+[15:04:15.6] 5-share found by worker thread 10
+[15:04:16.1] 5-share found by worker thread 0
+[15:04:17.6] 5-share found by worker thread 2
+[15:04:23.4] 36132.60 c/s, r 16.12 ; Sh: 36/36 (100.0%) | 138.0 RIC/d
+[15:04:33.1] 5-share found by worker thread 22
+[15:04:35.1] 5-share found by worker thread 13
+[15:04:36.5] 5-share found by worker thread 4
+[15:04:37.0] 5-share found by worker thread 16
+[15:04:44.1] 5-share found by worker thread 14
+[15:04:53.3] 5-share found by worker thread 8
+[15:04:53.6] 36188.32 c/s, r 16.14 ; Sh: 42/42 (100.0%) | 137.1 RIC/d
+[15:05:05.7] 5-share found by worker thread 4
+[15:05:15.7] 5-share found by worker thread 0
+[15:05:19.0] 5-share found by worker thread 16
+[15:05:19.7] 5-share found by worker thread 2
+[15:05:22.8] 5-share found by worker thread 8
+[15:05:23.6] 36524.99 c/s, r 16.14 ; Sh: 47/47 (100.0%) | 138.1 RIC/d
+[15:05:24.2] 5-share found by worker thread 6
+[15:05:31.1] 5-share found by worker thread 12
+[15:05:34.0] 5-share found by worker thread 12
+[15:05:34.5] 5-share found by worker thread 8
+[15:05:35.8] 5-share found by worker thread 0
+[15:05:41.0] 5-share found by worker thread 0
