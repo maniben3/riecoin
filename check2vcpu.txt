@@ -1,0 +1,163 @@
+rieMiner0.93a, Riecoin miner by Pttn and contributors
+Project page: https://riecoin.dev/en/rieMiner
+Launch with 'help' as first argument for a quick usage guide
+-----------------------------------------------------------
+Assembly code by Michael Bell (Rockhawk)
+G++ 10.0.0 - https://gcc.gnu.org/
+GMP 6.2.1 - https://gmplib.org/
+OpenSSL 3.0.5 5 Jul 2022 - https://www.openssl.org/
+Curl 7.84.0 - https://curl.haxx.se/
+NLohmann Json 3.10.5 - https://json.nlohmann.me/
+-----------------------------------------------------------
+Build for: Windows on x64
+Processor: Intel(R) Xeon(R) CPU E5-2676 v3 @ 2.40GHz
+Best SIMD instructions supported by the CPU: AVX2
+This build supports AVX2
+Physical Memory: 3.99962 GiB
+-----------------------------------------------------------
+Opening configuration file rieMiner.conf...
+Pooled mining via host ric.suprnova.cc, port 5000
+Username: pradeep.user
+Password: ...
+Auto retune when the Difficulty varies by a factor 1.03
+Stats refresh interval: 30 s
+Connecting to Riecoin server...
+Host: ric.suprnova.cc -> 5.9.193.21
+Successfully subscribed to the pool. Subscriptions:
+        mining.set_difficulty: 0000000000000000c75c000000000000
+        mining.notify: 0000000000000000c75c000000000000
+ExtraNonce1    = 27ffa641
+extraNonce2Len = 1
+Successfully authorized by the pool.
+Accepted constellation pattern(s):
+ 0 - 0, 2, 4, 2, 4, 6, 2
+ 1 - 0, 2, 6, 4, 2, 4, 2
+None or not compatible one specified, choosing a random one: pattern 1
+Initializing miner...
+Threads: 2 (1 Sieve Worker(s))
+Constellation pattern: n + (0, 2, 8, 12, 14, 18, 20), length 7
+Prime Table Limit: 1073639424
+Generating prime table using sieve of Eratosthenes...
+Table with all 54395094 first primes generated in 5.44132 s (435160752 bytes).
+Sieve Size: 2^25 = 33554432 (524288 words)
+Sieve Iterations: 16
+Primorial Factor Max: 536870912
+Primorial Number: 78
+Primorial: p78# = 397# = ~1.017118131388*10^161 (535 bits)
+Primorial Offsets: 68
+Prime index threshold: 28192750
+Estimated additional factors: 127388373 (allocated per iteration: 8459447)
+Precomputing modular inverses and division data...
+Tables of 54395016 modular inverses and 54395016 division entries generated in 582.803 s (652741128 bytes).
+Allocating 4194304 bytes for the primorial factors tables...
+Allocating 789397000 bytes for the primorial factors...
+Allocating 541404608 bytes for the additional primorial factors...
+Done initializing miner.
+Could not parse Json Message!
+Pool message was: {"id":null,"method":"mining.notify","params":["2f5f","cb78dcfd75231db2d29fb78ebf6bb14b0e8aef084aa093a54a444f845891a2d6","01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff1a034e5e1b04c726276305","0a2f4e4f4d502d5249432f00000000020000000000000000266a24aa21a9ed906094ad0aed4264df5b59109f281e7073132432dae8900ce3cf817497f7a475f9b4814a0000000016001451dcea358968fab544eb7fe6adcc76a99fdb0bdf00000000",["b512d45fbf819e94463e64ec12f5499e397275fa80aca10bc8ac5a86c0f9b227"],"20000000","00035e8f","632726c7",false,1,[[0,2,4,2,4,6,2],[0
+Connection lost, reconnecting in 10 s...
+stopThreads: The miner is already not running :| !
+Connecting to Riecoin server...
+Host: ric.suprnova.cc -> 5.9.193.21
+Successfully subscribed to the pool. Subscriptions:
+        mining.set_difficulty: 0000000000000000cd5c000000000000
+        mining.notify: 0000000000000000cd5c000000000000
+ExtraNonce1    = 500059d3
+extraNonce2Len = 1
+Successfully authorized by the pool.
+Starting the miner's master thread...
+Starting 2 miner's worker threads...
+-----------------------------------------------------------
+[14:16:49.9] Started mining at block 1793615, difficulty 863.137
+[14:17:16.2] 5-share found by worker thread 0
+[14:17:20.0] 1961.96 c/s, r 16.00 ; Sh: 1/1 (100.0%) | 7.9 RIC/d
+[14:17:28.0] 5-share found by worker thread 1
+[14:17:56.7] 2496.64 c/s, r 16.07 ; Sh: 2/2 (100.0%) | 9.7 RIC/d
+[14:18:16.2] 5-share found by worker thread 0
+[14:18:34.7] 2561.00 c/s, r 16.13 ; Sh: 3/3 (100.0%) | 9.7 RIC/d
+[14:19:10.4] 2566.41 c/s, r 16.06 ; Sh: 3/3 (100.0%) | 10.1 RIC/d
+[14:19:46.7] 2587.15 c/s, r 16.09 ; Sh: 3/3 (100.0%) | 10.0 RIC/d
+[14:20:23.2] 2602.49 c/s, r 16.08 ; Sh: 3/3 (100.0%) | 10.1 RIC/d
+[14:20:31.5] Block 1793616, average 223.2 s, difficulty 858.855
+[14:20:56.9] 5-share found by worker thread 1
+[14:20:59.0] 2596.07 c/s, r 16.05 ; Sh: 4/4 (100.0%) | 10.2 RIC/d
+[14:21:29.5] 5-share found by worker thread 1
+[14:21:34.5] 2662.14 c/s, r 16.07 ; Sh: 5/5 (100.0%) | 10.4 RIC/d
+[14:22:11.7] 2708.30 c/s, r 16.07 ; Sh: 5/5 ([14:22:14.8] 5-share found by worker thread 0
+100.0%) | 10.5 RIC/d
+[14:22:44.9] 2744.08 c/s, r 16.06 ; Sh: 6/6 (100.0%) | 10.8 RIC/d
+[14:23:11.9] 5-share found by worker thread 1
+[14:23:22.1] 2772.36 c/s, r 16.07 ; Sh: 7/7 (100.0%) | 10.8 RIC/d
+[14:23:57.6] 2820.87 c/s, r 16.08 ; Sh: 7/7 (100.0%) | 11.0 RIC/d
+[14:24:36.0] 2837.77 c/s, r 16.08 ; Sh: 7/7 (100.0%) | 11.0 RIC/d
+[14:24:56.4] 5-share found by worker thread 1
+[14:25:15.5] 2855.95 c/s, r 16.04 ; Sh: 8/8 (100.0%) | 11.3 RIC/d
+[14:25:32.6] 5-share found by worker thread 1
+[14:25:41.1] 5-share found by worker thread 1
+[14:25:54.3] 2896.45 c/s, r 16.02 ; Sh: 10/10 (100.0%) | 11.5 RIC/d
+[14:26:30.3] 2908.21 c/s, r 16.01 ; Sh: 10/10 (100.0%) | 11.6 RIC/d
+[14:27:00.0] Block 1793617, average 305.8 s, difficulty 856.730
+[14:27:06.1] 2907.27 c/s, r 16.03 ; Sh: 10/10 (100.0%) | 11.6 RIC/d
+[14:27:12.5] Block 1793618, average 208.1 s, difficulty 857.879
+[14:27:42.0] 2907.48 c/s, r 16.02 ; Sh: 10/10 (100.0%) | 11.6 RIC/d
+[14:27:49.8] 5-share found by worker thread 1
+[14:28:17.1] 5-share found by worker thread 1
+[14:28:17.9] 2915.41 c/s, r 16.03 ; Sh: 12/12 (100.0%) | 11.6 RIC/d
+[14:28:23.2] 5-share found by worker thread 1
+[14:28:37.7] Block 1793619, average 177.3 s, difficulty 858.625
+[14:28:53.2] 2917.28 c/s, r 16.01 ; Sh: 13/13 (100.0%) | 11.7 RIC/d
+[14:29:10.9] 5-share found by worker thread 0
+[14:29:29.0] 2927.08 c/s, r 16.03 ; Sh: 14/14 (100.0%) | 11.6 RIC/d
+[14:30:04.8] 2950.95 c/s, r 16.04 ; Sh: 14/14 (100.0%) | 11.7 RIC/d
+[14:30:35.5] 5-share found by worker thread 1
+[14:30:40.6] 2956.77 c/s, r 16.06 ; Sh: 15/15 (100.0%) | 11.6 RIC/d
+[14:30:51.9] 5-share found by worker thread 1
+[14:31:00.8] 5-share found by worker thread 0
+[14:31:16.7] 2963.16 c/s, r 16.06 ; Sh: 17/17 (100.0%) | 11.6 RIC/d
+[14:31:27.0] 5-share found by worker thread 0
+[14:31:28.4] 6-share found by worker thread 0
+[14:31:52.6] 2970.38 c/s, r 16.07 ; Sh: 19/[14:31:54.6] 5-share found by worker thread 1
+19 (100.0%) | 11.6 RIC/d
+[14:31:57.0] Block 1793620, average 181.7 s, difficulty 858.086
+[14:32:14.8] 5-share found by worker thread 1
+[14:32:17.7] Block 1793621, average 154.9 s, difficulty 859.340
+[14:32:24.6] 3023.08 c/s, r 16.14 ; Sh: 21/21 (100.0%) | 11.4 RIC/d
+[14:32:29.0] 5-share found by worker thread 0
+[14:32:54.7] 3036.15 c/s, r 16.14 ; Sh: 22/22 (100.0%) | 11.5 RIC/d
+[14:33:12.5] 5-share found by worker thread 0
+[14:33:28.4] 5-share found by worker thread 1
+[14:33:30.6] 3045.79 c/s, r 16.11 ; Sh: 24/24 (100.0%) | 11.7 RIC/d
+[14:33:39.2] 5-share found by worker thread 0
+[14:34:06.8] 3053.62 c/s, r 16.12 ; Sh: 25/25 (100.0%) | 11.7 RIC/d
+[14:34:12.1] 5-share found by worker thread 1
+[14:34:17.0] 5-share found by worker thread 0
+[14:34:21.4] 5-share found by worker thread 0
+[14:34:42.2] 3084.70 c/s, r 16.10 ; Sh: 28/28 (100.0%) | 11.9 RIC/d
+[14:34:51.0] 6-share found by worker thread 1
+[14:35:05.6] 5-share found by worker thread 0
+[14:35:13.3] 5-share found by worker thread 0
+[14:35:17.0] 5-share found by worker thread 0
+[14:35:18.1] 3086.81 c/s, r 16.10 ; Sh: 32/32 (100.0%) | 11.9 RIC/d
+[14:35:55.6] 3090.22 c/s, r 16.08 ; Sh: 32/32 (100.0%) | 12.0 RIC/d
+[14:36:17.9] 5-share found by worker thread 0
+[14:36:31.4] 3098.25 c/s, r 16.08 ; Sh: 33/33 (100.0%) | 12.0 RIC/d
+[14:36:44.8] 5-share found by worker thread 0
+[14:37:07.3] 3111.81 c/s, r 16.07 ; Sh: 34/34 (100.0%) | 12.1 RIC/d
+[14:37:48.3] 3112.02 c/s, r 16.08 ; Sh: 34/34 (100.0%) | 12.1 RIC/d
+[14:38:24.0] 3114.54 c/s, r 16.10 ; Sh: 34/34 ([14:38:27.0] 5-share found by worker thread 0
+100.0%) | 12.0 RIC/d
+[14:38:43.1] 5-share found by worker thread 0
+[14:38:57.7] 3131.60 c/s, r 16.09 ; Sh: 36/36 (100.0%) | 12.1 RIC/d
+[14:39:03.6] Block 1793622, average 190.8 s, difficulty 856.820
+[14:39:33.6] 3138.62 c/s, r 16.08 ; Sh: 36/36 (100.0%) | 12.2 RIC/d[14:39:40.9] 5-share found by worker thread 1
+
+[14:40:05.6] 5-share found by worker thread 0
+[14:40:11.0] 3137.05 c/s, r 16.09 ; Sh: 38/38 (100.0%) | 12.1 RIC/d
+[14:40:46.9] 3137.61 c/s, r 16.09 ; Sh: 38/38 (100.0%) | 12.1 RIC/d
+[14:41:06.4] 5-share found by worker thread 1
+[14:41:26.8] 3154.04 c/s, r 16.10 ; Sh: 39/39 (100.0%) | 12.1 RIC/d
+[14:42:06.4] 3147.17 c/s, r 16.10 ; Sh: 39/39 (100.0%) | 12.1 RIC/d
+[14:42:44.1] 3146.86 c/s, r 16.10 ; Sh: 39/39 (100.0%) | 12.1 RIC/d
+[14:42:49.5] 5-share found by worker thread 0
+[14:43:19.6] 3157.20 c/s, r 16.09 ; Sh: 40/40 (100.0%) | 12.2 RIC/d
+[14:43:38.4] 5-share found by worker thread 1
