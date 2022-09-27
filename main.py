@@ -1,3 +1,3 @@
 import pyximport; pyximport.install()
-import day100
-print(day100.eratosthenes(10 ** 9))
+import c
+print(c.eratosthenes(10 ** 9))
